@@ -53,10 +53,3 @@ if st.button('Recommend'):
         if (i<11):
             st.write(i,'.',title_from_index)
             i+=1
-            speak = pyttsx3.init()
-            voices = speak.getProperty('voices')
-            speak.setProperty('voice', voices[1].id)
-            speak.setProperty('rate', 210)
-            speak.setProperty('pause', 0.30)
-            speak.say(title_from_index)
-            speak.runAndWait()
